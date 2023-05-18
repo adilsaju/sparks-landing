@@ -101,10 +101,16 @@ body {
     height: auto;
     margin-top: 20px;
   }
+
+  .objectives {
+    background: rgba(242, 250, 255, 1);
+
+  }
   
   
   .team-member {
     display: flex;
+    flex-direction: column;
     align-items: center;
     margin-top: 20px;
   }
@@ -114,6 +120,10 @@ body {
     width: 50px;
     border-radius: 50%;
     margin-right: 10px;
+  }
+  .team-member-subtitle {
+    font-size: 18px;
+    margin-bottom: 5px;
   }
   
   .partners {
