@@ -12,6 +12,13 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
+    box-sizing: border-box;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
   }
   
   .logo img {
@@ -29,6 +36,9 @@ body {
     width: 25px;
     background-color: #000;
     margin-bottom: 5px;
+  }
+  .first-section {
+    margin-top: 40px;
   }
   
   section {
