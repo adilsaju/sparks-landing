@@ -138,10 +138,46 @@ body {
   }
   
   .article {
+    display: flex;
+    align-items: center;
     margin-top: 20px;
   }
   
-  .article h3 {
-    margin-bottom: 5px;
+  .article img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .article-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .article-content p {
+    margin-bottom: 10px;
+  }
+  
+  .round-btn {
+    display: inline-block;
+    color: black;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 20px;
+
+    /* Ellipse 1 */
+
+
+/* box-sizing: border-box; */
+
+/* position: absolute; */
+/* left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%; */
+
+border: 2px solid #000000;
   }
   
