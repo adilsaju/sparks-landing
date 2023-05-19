@@ -13,3 +13,19 @@ for (let i = 0; i < a.length; i++) {
         event.target.innerHTML = "Register";
     });
 }
+
+window.onload = function() {
+        let container = document.querySelector('.card-container2');
+        let scrollAmount = 0;
+      
+        let slideTimer = setInterval(function(){
+            container.scrollLeft += 1;
+            scrollAmount++;
+        }, 25);
+      
+        container.addEventListener('scroll', function() {
+          if (container.scrollLeft + container.clientWidth >= container.scrollWidth) {
+            container.scrollLeft = 0;
+          }
+        });
+  }
