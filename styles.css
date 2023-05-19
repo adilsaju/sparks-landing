@@ -5,6 +5,11 @@ body {
     margin: 0;
     padding: 0;
   }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
   
   nav {
     background-color: #fff;
@@ -25,10 +30,36 @@ body {
     height: 30px;
   }
   
+
+  .links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    display: none;
+  }
+  
+  .links li {
+    margin-left: 20px;
+  }
+
+  .links li .cta-button {
+    color: white;
+  }
+  
+  .links li:first-child {
+    margin-left: 0;
+  }
+  
+  .links a {
+    text-decoration: none;
+    color: black;
+  }
   .menu-toggle {
     display: flex;
     flex-direction: column;
     cursor: pointer;
+    /* display: none; */
   }
   
   .menu-toggle span {
@@ -37,6 +68,9 @@ body {
     background-color: #000;
     margin-bottom: 5px;
   }
+
+  /* ############### */
+  
   .first-section {
     margin-top: 40px;
   }
@@ -61,8 +95,16 @@ body {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
+    /* margin-top: 10px; */
+  }
+  .first-section .cta-button {
     margin-top: 10px;
   }
+  .first-section .cta-button:hover {
+    background-color: rgb(255, 89, 0);
+  }
+  /* ############################# */
+
   .card-button {
     display: inline-block;
     background-color: #fff;
@@ -73,7 +115,21 @@ body {
     border-radius: 20px;
     margin-top: 10px;
   }
-  img {
+  .card-button:hover {
+    color:  rgb(255, 89, 0);
+    border: 1px solid rgb(255, 89, 0);
+  }
+  .card-button:hover span {
+    display: none;
+  }
+  .card-button:hover::after {
+    content: "Read More";
+    display: inline-block;
+    color: rgb(255, 89, 0);
+    font-family: "Manrope", sans-serif;
+  }
+
+  .first-section img {
     max-width: 100%;
     height: auto;
     margin-top: 20px;
@@ -301,7 +357,15 @@ body {
         justify-content: space-around;
       }
 
-      
+      .menu-toggle{
+        display: none;
+      }
+      .links {
+        display: flex;
+      }
+      .links>li{
+        align-self: center;
+      }
 
   }
 
