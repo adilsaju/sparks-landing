@@ -111,6 +111,29 @@ body {
     height: auto;
     margin-top: 20px;
   }
+  .offer-sec {
+    position: relative;
+  }
+
+  .scroll-button {
+    position: absolute;
+    align-self: center;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .scroll-button i {
+    font-size: 24px;
+  }
+
+  /* ##### */
 
   .objectives {
     background: rgba(242, 250, 255, 1);
@@ -263,6 +286,15 @@ border: 2px solid #000000;
     .first-section h2 {
         grid-column: -1/1;
     }
+
+    .card-container {
+        margin-right: -30px;
+      }
+    
+      .scroll-button {
+        display: block;
+      }
+
   }
 
   
