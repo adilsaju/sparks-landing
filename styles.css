@@ -122,12 +122,12 @@ body {
   .card-button:hover span {
     display: none;
   }
-  .card-button:hover::after {
+  /* .card-button:hover::before {
     content: "Read More";
     display: inline-block;
     color: rgb(255, 89, 0);
     font-family: "Manrope", sans-serif;
-  }
+  } */
 
   .first-section img {
     max-width: 100%;
