@@ -10,6 +10,10 @@ body {
     max-width: 100%;
     height: auto;
   }
+
+  p {
+    /* font-size: 18px !important; */
+  }
   
   nav {
     background-color: #fff;
@@ -90,18 +94,22 @@ body {
   
   .cta-button {
     display: inline-block;
-    background-color: purple;
+    /* background-color: purple; */
+    background: rgb(145,42,184);
+    background: linear-gradient(0deg, rgba(145,42,184,1) 71%, rgba(221,115,247,1) 100%);
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
+    border-radius: 20px;
     /* margin-top: 10px; */
   }
   .first-section .cta-button {
     margin-top: 10px;
   }
   .first-section .cta-button:hover {
-    background-color: rgb(255, 89, 0);
+    background: rgb(179,35,76);
+    background: linear-gradient(0deg, rgba(179,35,76,1) 62%, rgba(242,98,140,1) 100%);
   }
   /* ############################# */
 
@@ -113,7 +121,8 @@ body {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 20px;
-    margin-top: 10px;
+    /* margin-top: 10px; */
+    margin: 0 20px;
   }
   .card-button:hover {
     color:  rgb(255, 89, 0);
@@ -147,19 +156,25 @@ body {
     min-width: 200px;
     /* height: 300px; */
     margin-right: 10px;
-    padding: 20px;
+    /* padding: 20px; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.1); /* Add this line */
+    margin: 10px;
   }
   
   .card-subtitle {
     font-size: 24px;
     margin-bottom: 10px;
+    padding: 0 20px;
   }
   
   .card p {
     font-size: 16px;
+    padding: 0 20px;
   }
   
   .card img {
@@ -169,6 +184,11 @@ body {
   }
   .offer-sec {
     position: relative;
+  }
+
+  .offer-sec p:first-of-type {
+    font-weight: bold;
+    margin: 0;
   }
 
   .scroll-button {
@@ -189,12 +209,28 @@ body {
     font-size: 24px;
   }
 
+  .scroll-button:hover {
+    background-color: purple;
+  }
+
   /* ##### */
 
   .objectives {
     background: rgba(242, 250, 255, 1);
 
   }
+  .objectives p {
+    font-size: 18px;
+  }
+  .objectives .team-member {
+    padding: 20px;
+  }
+
+  /* .objectives img {
+    height: 100px;
+    width: 100px;
+  } */
+  
   
   /* ###### */
   .team-member {
@@ -310,6 +346,10 @@ body {
     line-height: 40px;
     margin: 0 10px;
   }
+
+  .objectives .section-title, .parents .section-title, .partners-sec .section-title  {
+    text-align: center;
+  }
   
 
 /* DESKTOP############################################### */
@@ -343,9 +383,7 @@ body {
         display: block;
       }
 
-      .objectives .section-title, .parents .section-title, .partners-sec .section-title  {
-        text-align: center;
-      }
+
 
       .wrap1{
         display: grid;
@@ -367,6 +405,9 @@ body {
         align-self: center;
       }
 
+      .objectives .team-member {
+        padding: 60px;
+      }
   }
 
   
