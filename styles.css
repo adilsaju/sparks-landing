@@ -140,7 +140,7 @@ body {
 
   }
   
-  
+  /* ###### */
   .team-member {
     display: flex;
     flex-direction: column;
@@ -294,6 +294,22 @@ border: 2px solid #000000;
       .scroll-button {
         display: block;
       }
+
+      .objectives .section-title, .parents .section-title, .partners-sec .section-title  {
+        text-align: center;
+      }
+
+      .wrap1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .partners {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      
 
   }
 
