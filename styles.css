@@ -119,7 +119,10 @@ body {
   .first-section img {
     margin-top: 20px;
   }
-
+  .first-section p {
+    font-size: 20px;
+    font-weight: 100;
+  }
   .desktop-img {
     position: relative;
 }
@@ -196,6 +199,7 @@ body {
   
   .card p {
     font-size: 16px;
+    font-weight: 100;
     padding: 0 20px;
   }
   
@@ -243,6 +247,7 @@ body {
   }
   .objectives p {
     font-size: 18px;
+    font-weight: 200;
   }
   .objectives .team-member {
     padding: 20px;
@@ -285,36 +290,57 @@ body {
   }
 /* ################# */
   /* complex */
-  .card-wrapper {
-    overflow-x: scroll;
-    margin-top: 20px;
+
+  .parents .section-title {
+    text-align: center;
   }
   
   .card-container2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 20px;
+    display: grid;
+    grid-template-rows: repeat(2, minmax(200px, 1fr));
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(200px, auto);
+    grid-gap: 20px;
+    overflow-x: auto;
+    max-width: 100%; /* adjust to the desired maximum width */
+    gap: 20px;
+    column-gap: 150px;
   }
   
   .card2 {
-    background-color: #f0f0f0;
-    width: 200px;
-    height: 250px;
-    margin-bottom: 20px;
-    padding: 20px;
-    flex-grow: 1;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 20px 20px 20px 0; /* top-left, top-right, bottom-right, bottom-left */
+    min-width: 300px;
   }
-  
-  .card2:nth-child(2n) {
-    margin-left: 50px;
+  .card2 p {
+    font-weight: 100;
   }
-  
-  .card2:nth-child(3n) {
-    margin-left: 0;
-    margin-right: 50px;
+  .image-title-wrap img {
+    min-width: 100px;
+    height: auto;
   }
-  
+  .image-title-wrap {
+    padding: 10px;
+    /* display: none; */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-self: start;
+}
+.image-title-wrap h3 {
+    font-weight: 500;
+    margin: 0;
+
+}
+
   .card2 img {
     height: 100px;
     width: 100px;
@@ -354,6 +380,7 @@ body {
   
   .article-content p {
     margin-bottom: 10px;
+    font-weight: 300;
   }
   
   .round-btn {
