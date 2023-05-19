@@ -77,9 +77,13 @@ body {
   
   .first-section {
     margin-top: 40px;
+    padding: 20px 0;
+  }
+  .first-section .content {
+    padding: 20px;
   }
   
-  section {
+  section:not(.first-section) {
     padding: 20px;
   }
   
@@ -111,6 +115,29 @@ body {
     background: rgb(179,35,76);
     background: linear-gradient(0deg, rgba(179,35,76,1) 62%, rgba(242,98,140,1) 100%);
   }
+
+  .first-section img {
+    margin-top: 20px;
+  }
+
+  .desktop-img {
+    position: relative;
+}
+
+.desktop-img::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url('top-curve.svg') no-repeat;
+    background-position: top -200px center; 
+
+    background-size: cover;
+}
+
+
   /* ############################# */
 
   .card-button {
@@ -137,12 +164,6 @@ body {
     color: rgb(255, 89, 0);
     font-family: "Manrope", sans-serif;
   } */
-
-  .first-section img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
-  }
   
   .card-container {
     display: flex;
@@ -363,6 +384,22 @@ body {
       max-width: 100%;
       height: auto;
     }
+    .desktop-img {
+        position: relative;
+    }
+    
+    .desktop-img::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: url('left-curve.svg') no-repeat;
+        background-position: left -300px center; /* adjust this line */
+
+        background-size: cover;
+    }
 
     .first-section{
         display: grid;
@@ -407,6 +444,13 @@ body {
 
       .objectives .team-member {
         padding: 60px;
+      }
+
+      section:not(.first-section) {
+        padding: 20px 50px;
+      }
+      .first-section .content {
+        padding: 50px;
       }
   }
 
