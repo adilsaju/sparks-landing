@@ -454,7 +454,7 @@ p {
     width: 100%;
     height: 100%;
     background: url('left-curve.svg') no-repeat;
-    background-position: left -300px center;
+    background-position: left -200px center;
     /* adjust this line */
 
     background-size: cover;
