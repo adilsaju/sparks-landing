@@ -1,3 +1,3 @@
 # sparks-landing
 
-Landing Page created for a school in Vancouver, BC
+Marketing Website created for a school in Vancouver, BC
